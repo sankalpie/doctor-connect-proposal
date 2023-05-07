@@ -1,0 +1,354 @@
+/* styling the main content */
+#mainContent
+{
+  background-color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 100px;
+}
+
+#status
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.status
+{
+  margin-left: 10px;
+  padding-left: 5px;
+}
+
+#sch
+{
+  border-left: 15px solid rgb(163, 163, 246);
+  max-height: 20px;
+}
+
+#com
+{
+  border-left: 15px solid rgb(126, 234, 160);
+  max-height: 20px;
+}
+#mis
+{
+  border-left: 15px solid rgb(214, 233, 42);
+  max-height: 20px;
+}
+
+#can
+{
+  border-left: 15px solid rgb(244, 109, 41);
+  max-height: 20px;
+}
+
+#uns
+{
+  border-left: 15px solid rgb(122, 122, 117);
+  max-height: 20px;
+}
+
+.work
+{
+  color: white;
+  background-color: rgb(90, 175, 203);
+  border:none;
+  margin-left: 40px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.work:hover
+{
+  background-color: rgb(113, 206, 236);
+}
+
+/* styling the mid Buttons */
+#midButtons
+{
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.lNrButtons
+{
+  background-color: rgb(90, 175, 203);
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  font-weight: 600;
+  color: white;
+  margin-right: 4px;
+}
+
+.dateSelectors
+{
+  margin: 0px;
+  margin-right: 4px;
+}
+
+#item3
+{
+  margin-right: 10px;
+}
+
+@media only screen and (max-width:566px)
+{
+  #midButtons
+  {
+      justify-content: center;
+  }
+  .lNrButtons
+  {
+      padding: 5px;
+  }
+  .work
+  {
+      padding: 5px;
+  }
+}
+
+@media only screen and (max-width:486px)
+{
+  .status
+  {
+      justify-content: center;
+      align-items: center;
+  }
+  #planButton
+  {        
+      margin-top: 8px;
+  }
+  #midButtons
+  {
+      flex-direction: column-reverse;
+      justify-content: space-between;
+      align-items: center;
+  }
+  #item1,#item2,#item3
+  {
+      margin-top: 10px;
+  }
+}
+
+/* styling the mid buttons ends here */
+
+/* styling the mainTable starts here */
+#timeTable
+{
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#addBorder
+{
+  border-right: 1px solid white;
+  color: #04AA6D;
+  width: 15%;
+}
+
+.timeTable
+{
+  width: 100%;
+  background-color: #04AA6D;
+  border-collapse: collapse;
+}
+
+.timeTable td
+{
+  background-color: white;
+  color: #666;
+  border-bottom: 1px solid gray;
+  background-color: rgb(248, 248, 173);
+  padding: 10px;
+}
+
+.data1
+{
+  background-color: white;
+}
+
+/* main table styling ends here */
+
+/* popup styling starts here */
+.bigger
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-around;
+  display: none;
+}
+
+.popup
+{
+  /* background-color: #04AA6D; */
+  position:absolute;
+  top: 30px;
+  width: 900px;
+  background-color: rgb(232,236,236);
+  padding-bottom: 10px;
+}
+
+#header1
+{
+  margin-top: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.topBar
+{
+  margin-top: 0px;
+  padding-top: 0%;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+  background-color: rgb(37, 150, 190);
+}
+
+.crossIcon
+{
+  float: right;
+  margin-right: 10px;
+  margin-top: 2px;
+}
+
+.crossIcon:hover
+{
+  cursor: pointer;
+}
+
+.subButtons,.timeline, .timeline2
+{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.popupButtons
+{
+  /* border: none; */
+  margin-left: 2px;
+  /* background-color: white; */
+  color: black;
+}
+
+.popupButtons:hover
+{
+  color: white;
+}
+
+.popupButton1
+{
+  color: black;
+  background-color: rgb(120,204,236);
+}
+
+.popupButton2
+{
+  background-color: white;
+}
+
+.popupButton2:hover
+{
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.popupButton1:hover
+{
+  cursor: pointer;
+}
+
+.timeline
+{
+  background-color: white;
+  padding-left:5px ;
+  padding-top: 5px;
+  line-height: 25px;
+}
+
+.timeline2
+{
+  background-color: white;
+  padding-left:5px ;
+  padding-top: 5px;
+  line-height: 25px;
+  display: none;
+}
+
+.daysList
+{
+  list-style-type: none;
+  list-style-position: outside;
+}
+
+.days:hover
+{
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.daysLink
+{
+  padding: 2px;
+  text-decoration: none;
+  color: blue;
+}
+
+.daysLink:hover
+{
+  text-decoration: underline !important; 
+  background-color: white !important;
+}
+
+.closeButton
+{
+  float:right;
+  margin-top: 10px;
+  margin-right: 20px;
+  background-color: red;
+}
+
+.closeButton:hover
+{
+  background-color: rgb(255, 78, 78);
+}
+
+@media only screen and (max-width:956px)
+{
+  .popup
+  {
+      width: 700px;
+  }
+}
+
+@media only screen and (max-width:748px)
+{
+  .popup
+  {
+      width: 500px;
+  }
+}
+
+@media only screen and (max-width:543px)
+{
+  .popup
+  {
+      width: 350px;
+  }
+  .topBar
+  {
+      font-size: 10px;
+  }
+  .timeline
+  {
+      font-size: 15px;
+  }
+}

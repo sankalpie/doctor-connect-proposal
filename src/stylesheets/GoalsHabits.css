@@ -1,0 +1,38 @@
+/* this is only for styling of leftTable subcontent of goals&habits section */
+
+#leftHeader
+{
+    color: green;
+    font-size: 20px;
+}
+
+#leftTable
+{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+
+.subGoalsNHabitsInfo
+{
+    color: #000000;
+    background-color: white;
+    border-top: 2px solid orange;
+}
+
+#leftTable .tableData
+{
+    padding: 10px;
+}
+
+#leftTable tr:nth-child(odd) {
+    background-color: #cce2f4;
+  }
+
+.dayCount
+{
+    font-size: 15px;
+    float: right;
+}
+

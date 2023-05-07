@@ -1,0 +1,102 @@
+.pat
+{
+  background-color: white;
+  color:#666;
+  border-top: 2px solid rgb(245, 119, 22);
+  /* border-top: 2px solid red; */
+}
+.ovw2
+{
+    color:white;
+    background-color: rgb(245, 119, 22);
+}
+
+
+/* styling of heading starts here */
+.left-margin {
+    margin-left: 10px;
+}
+
+@media only screen and (max-width:547px) {
+    .left-margin {
+        text-align: center;
+    }
+}
+
+/* styling of heading ends here */
+
+/* styling of table starts here */
+ .maintable {
+    width: 100%;
+    text-align: left;
+    background-color: white;
+    
+    /* border-collapse: separate; */
+
+    border-collapse: collapse;
+    border-spacing: 15px;
+}
+
+#patientTable {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.patientTable .firstrow {
+    color: #257bd2;
+}
+
+.patientTable tr
+{
+    border-bottom: 2px solid rgb(231, 229, 229);
+}
+
+.patientTable th
+{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+/* td
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}  */
+
+.personpic
+{
+    height: 35px;
+}
+
+.patientTable th:nth-child(even), .patientTable td:nth-child(even) 
+{
+    background-color: #f4f5f5;
+}
+
+@media only screen and (max-width:670px)
+{
+    .patientTable th
+    {
+        font-size: 15px;
+        font-weight: 700;
+    }
+    .patientTable td
+    {
+        font-size: 13px;
+    }
+    #thead1,#thead2,#thead3,#thead4
+    {
+        width:25%;
+    }
+}
+@media only screen and (max-width:420px)
+{
+    .patientTable th
+    {
+        font-size: 12px;
+    }
+}
+
+
+/* styling of table ends here */

@@ -1,0 +1,12 @@
+.goalsTab
+{
+    /* background-color: none !important; */
+    /* background-image: linear-gradient(#f4f4f4,#ececec); */
+    background-color: rgba(0,0,0,0);
+    border: none;
+}
+
+.goalsTab:hover
+{
+    background-image: linear-gradient(white,white);
+}

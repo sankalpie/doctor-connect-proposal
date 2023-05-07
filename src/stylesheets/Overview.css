@@ -1,0 +1,253 @@
+/* styling of heading starts here */
+#mainContent
+{
+    /* margin:0px ; */
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 12px;
+    /* margin-top: 0px; */
+    background-image: linear-gradient(white, rgb(233, 231, 231));
+    padding-bottom: 0px;
+    /* margin-bottom: 0%;
+    margin-top: 0%; */
+}
+
+.left-margin {
+    margin-left: 10px;
+    padding-top: 10px;
+}
+
+@media only screen and (max-width:547px) {
+    .left-margin {
+        text-align: center;
+    }
+}
+
+/* styling of heading ends here */
+
+/* stying the 2buttons which show total patients and total appointments */
+#totals
+{
+    background-color: rgb(221, 231, 240);
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+}
+
+.twoButtons
+{
+    background-color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size:18px;
+}
+
+.phoneIcon
+{
+    font-size: 40px;
+    margin-right: 15px;
+    float: left;
+    padding-top: 8px;
+}
+
+.twoButtonsContainer
+{
+    font-size: 30px;
+}
+
+.twoButtonsText
+{
+    margin-left: 75px;
+    color: rgb(124, 126, 126);
+}
+
+@media only screen and (max-width:600px)
+{
+    #totals
+    {
+        flex-wrap: wrap;
+    }
+    .twoButtons
+    {
+        margin: 10px;
+        font-size: 14px;
+        padding: 7px;
+    }
+    .twoButtonsText
+    {
+        margin-left: 50px;
+    }
+    .phoneIcon
+    {
+        font-size: 30px;
+    }
+}
+
+/* styling the top 2 buttons ends here */
+
+/* styling the Appointments Buttons */
+
+#appointmentTabs
+{
+    margin-top: 100px;
+}
+
+.appointmentButtons
+{
+    text-decoration: none;
+    color: #484747;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+
+.appointmentButtons:hover
+{
+    color: #000000;
+    background-color: white;
+    border-top: 2px solid orange;
+}
+
+@media only screen and (max-width:460px)
+{
+    
+    .appointmentButtons
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-right: 8px;
+    }
+    .lastAppointmentButton
+    {
+        margin-bottom: 7px;
+    }
+}
+
+/* styling Appointment Buttons ends here */
+
+/* styling the search and date sort bar */
+
+#entriesSearch
+{
+    margin-left: 10px;
+    margin-right: 12px;
+}
+
+.searchTableData
+{
+    background-color: white;
+    width: 18%;
+}
+
+.searchButton
+{
+    color: white;
+    background-color: rgb(77, 170, 232);
+    margin-left: 20px;
+    border: none;
+    border-radius:5px;
+    padding: 10px;
+    font-size:15px ;
+}
+
+.exportButton
+{
+    color: white;
+    background-color: rgb(77, 170, 232);
+    margin-left: 20px;
+    border: none;
+    border-radius:5px;
+    padding: 10px;
+    font-size:15px ;
+    margin-right: 5px;
+}
+
+@media only screen and (max-width:460px)
+{
+    .labels
+    {
+        font-size: 12px;
+    }
+    .searchButton,.exportButton
+    {
+        padding: 5px;
+        font-size: 13px;
+    }
+    
+}
+
+/* styling the search and date sort bar ends here*/
+
+/* styling of Player Table starts here */
+
+#mainTable
+{
+    margin-left: 10px;
+    margin-right: 12px;
+}
+
+.playerTable
+{
+    width: 100%;
+    border-collapse:collapse;
+    /* border-spacing: 15px; */
+}
+
+.playerTable th,.mainData
+{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-right: 1px solid white;
+}
+
+.playerTable .firstRow
+{
+    background-color: #24a877;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.playerTable tr:nth-child(even) 
+{
+    background-color: #D6EEEE;
+}
+
+@media only screen and (max-width:600px)
+{
+    .playerTable .firstRow
+    {
+        font-size: 10px;
+    }
+    .playerTable .mainData
+    {
+        font-size: 13px;
+    }
+}
+
+
+.ovw
+{
+  background-color: white;
+  color:#666;
+  border-top: 2px solid rgb(245, 119, 22);
+}
+
+.sch {
+    margin-top: 20px;
+    display: inline-block;
+    color: white;
+    background-color: rgb(245, 119, 22);
+    padding: 10px;
+    border-radius: 7px 7px 0px 0px;
+    text-decoration: none;
+    font-size: 20px;
+  }

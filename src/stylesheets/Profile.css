@@ -1,0 +1,207 @@
+/* this css will control all the subsections of Profile Tab */
+
+
+/* styling the tabsContainer starts here */
+.tabsContainer,#tabsContainer
+{
+    /* margin:0px ; */
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 12px;
+    /* margin-top: 0px; */
+    background-image: linear-gradient(white, rgb(233, 231, 231));
+}
+
+/* styling the Appointments Buttons */
+
+.appointmentTabs,#appointmentTabs
+{
+    margin-top: 20px;
+}
+
+.appointmentButtons
+{
+    text-decoration: none;
+    color: #484747;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+
+.appointmentButtons:hover
+{
+    color: #000000;
+    background-color: white;
+    border-top: 2px solid orange;
+}
+
+@media only screen and (max-width:460px)
+{
+    
+    .appointmentButtons
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-right: 8px;
+    }
+    .lastAppointmentButton
+    {
+        margin-bottom: 7px;
+    }
+}
+
+/* styling Appointment Buttons ends here */
+
+/*  */
+#numberAndTest
+{
+    margin-left: 10px;
+    margin-right: 12px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 10px;
+}
+
+#thyrocareButton
+{
+    background-color: rgb(132, 159, 241);
+    border: none;
+    border-radius: 5px;
+    padding: -2px;
+    color: white;
+}
+
+/* styling mainContent starts here */
+.mainGoal #mainContent
+{
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 12px;
+}
+
+#wrapper
+{
+    margin-left: -10px;
+    margin-right: -12px;
+}
+
+.photoNstats
+{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+}
+
+.bioData, ol
+{
+    list-style-type: none;
+    
+}
+
+.bioData li
+{
+    align-items: center;
+    align-self: center;
+}
+
+#profilePic
+{
+    width: 180px;
+    height: 140px;
+}
+
+/* styling sub content starts here */
+#subContent
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    
+}
+
+#leftContent
+{
+    width: 50%;
+    height: 300px;
+    
+}
+
+#rightContent
+{
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+#interactionButton
+{
+    justify-self: center;
+    align-self: center;
+    border: none;
+    padding: 10px;
+    color: white;
+    background-color: rgb(132, 159, 241);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.testing
+{
+    text-align: center;
+}
+
+/* styling the chat table */
+#rightTable
+{
+    border-collapse:separate;
+    margin-left: 8px;
+}
+
+.sentBy
+{
+    width: 10%;
+}
+
+.chatContent
+{
+    background-color: rgb(244,244,244);
+    border: 1px inset black;
+    
+}
+
+/* media controls to bring the left & right subContent below one another */
+@media only screen and (max-width:740px)
+{
+    #subContent
+    {
+        flex-direction: column;
+    }
+    #leftContent
+    {
+        width: 100%;
+    }
+    #rightContent
+    {
+        margin-top: 10px;
+        width:100%;
+    }
+    .chatContent
+    {
+        font-size: 15px;
+    }
+}
+
+.appointmentTab
+{
+    background-color: rgba(0,0,0,0);
+    border:none;
+}

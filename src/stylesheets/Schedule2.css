@@ -1,0 +1,598 @@
+/* styling the tabsContainer starts here */
+#tabsContainer
+{
+    /* margin:0px ; */
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 12px;
+    /* margin-top: 0px; */
+    background-image: linear-gradient(white, rgb(233, 231, 231));
+}
+
+/* styling the Appointments Buttons */
+
+#appointmentTabs
+{
+    margin-top: 100px;
+}
+
+.appointmentButtons
+{
+    text-decoration: none;
+    color: #484747;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+
+.currentAppointmentInfo
+{
+    color: #000000;
+    background-color: white;
+    border-top: 2px solid orange;
+}
+
+.appointmentButtons:hover
+{
+    color: #000000;
+    background-color: white;
+    border-top: 2px solid orange;
+}
+
+@media only screen and (max-width:460px)
+{
+    
+    .appointmentButtons
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-right: 8px;
+    }
+    .lastAppointmentButton
+    {
+        margin-bottom: 7px;
+    }
+}
+
+/* styling Appointment Buttons ends here */
+
+/*  */
+#numberAndTest
+{
+    margin-left: 10px;
+    margin-right: 12px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 10px;
+}
+
+#thyrocareButton
+{
+    background-color: rgb(132, 159, 241);
+    border: none;
+    border-radius: 5px;
+    padding: -2px;
+    color: white;
+}
+
+/* styling mainContent starts here */
+.mainSch2 #mainContent
+{
+    background-color: white;
+    /* margin-top: -20px; */
+    margin-left: 10px;
+    margin-right: 12px;
+    display: flex;
+    flex-direction: row;
+}
+
+#doctorProfile
+{
+    width: 30%;
+    background-color: rgb(178, 218, 231);
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    align-content: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.profilePic
+{
+    margin-top: 10px;
+    max-width: 200px;
+    max-height: 170px;
+    align-self: center;
+}
+
+p
+{
+    text-align: center;
+}
+
+#joinMeeting
+{
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: #42a662;
+    padding: 8px;
+    position: relative;
+}
+
+#joinMeeting:hover
+{
+    background-color: #67ba81;
+    cursor: pointer;
+}
+
+#options
+{
+    width: 100%;
+    
+}
+
+#optionsContainer
+{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#upcomingAppointment
+{
+    width: 25%;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    margin-right: 0px;
+}
+
+
+/* styling the last appointment table */
+
+#lastAppointAndStats
+{
+    width: 55%;
+    margin-top: 10px;
+}
+
+#appointmentTable
+{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.lastAppointments
+{
+    max-width: 100%;
+    border-collapse: collapse;
+}
+
+th
+{
+    font-size: 18px;
+}
+
+#firstRow
+{
+    background-color: #24a877;
+
+}
+
+#stats
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 12px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.statsButton
+{
+    border:none;
+    background-color: rgb(178, 218, 231);
+    padding: 15px;
+    border-radius: 5px;
+    font-size:15px;
+    line-height: 25px;
+    padding-right: 50px;
+    padding-left: 50px;
+    
+}
+
+.statsButtonFirst
+{
+    margin-left: 25px;
+}
+
+.statsButtonLast
+{
+    margin-right: 25px;
+}
+
+@media only screen and (max-width:985px)
+{
+    .profilePic
+    {
+        width: 140px;
+        height: 110px;
+    }
+    p.number
+    {
+        font-size: 11px;
+    }
+    #joinMeeting
+    {
+        font-size: 11px;
+        padding: 6px;
+    }
+
+    th
+    {
+        font-size: 12px;
+    }
+    td
+    {
+        font-size: 13px;
+    }
+    
+    ol
+    {
+        font-size: 13px;
+    }
+    .header
+    {
+        font-size: 13px;
+    }
+    .statsButton
+    {
+        padding: 9px 50px 9px 50px;
+        font-size: 11px;
+        line-height: 15px;
+    }
+    
+}
+
+@media only screen and (max-width:770px)
+{
+    .statsButton
+    {
+        padding: 9px 30px 9px 30px;
+        
+    }
+    .textSpace
+    {
+        width: 2%;
+    }
+}
+
+@media only screen and (max-width:694px)
+{
+    .profilePic
+    {
+        width: 110px;
+        height: 90px;
+    }
+
+    th
+    {
+        font-size: 10px;
+    }
+    td
+    {
+        font-size: 12px;
+    }
+    ol
+    {
+        font-size: 11px;
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (max-width:597px)
+{
+    .profilePic
+    {
+        width: 90px;
+        height: 70px;
+    }
+
+    th
+    {
+        font-size: 7px;
+    }
+    td
+    {
+        font-size: 9px;
+    }
+    ol
+    {
+        font-size: 10px;
+        margin-left: 10px;
+    }
+    .statsButton
+    {
+        padding: 9px 18px 9px 18px;
+        font-size: 10px;
+        line-height: 15px;
+    }
+}
+
+@media only screen and (max-width:460px)
+{
+    #doctorProfile
+    {
+        margin-right: 10px;
+        /* padding-right: 10px; */
+    }
+
+    .doctorWrapper
+    {
+        margin-right: 10px;
+    }
+
+    #joinMeeting
+    {
+        font-size: 13px;
+        padding: 6px;
+    }
+    p.number
+    {
+        font-size: 20px;
+    }
+
+    .mainSch2 #mainContent
+    {
+        flex-direction: column;
+        /* align-items: center; */
+        /* justify-content: center; */
+    }
+    #optionsContainer
+    {
+        text-align: center;
+    }
+    #options
+    {
+        width: 100px;
+    }
+    #doctorProfile,#upcomingAppointment,#lastAppointAndStats
+    {
+        width: 100%;
+    }
+    #doctorProfile
+    {
+        border-radius: 10px;
+
+    }
+    .header
+    {
+        font-size: 18px;
+        max-width: 370px;
+    }
+    ol
+    {
+        font-size: 18px;
+        max-width: 300px;
+    }
+    th
+    {
+        font-size: 10px;
+    }
+    td
+    {
+        font-size: 12px;
+    }
+    #horizontalRule
+    {
+        max-width: fit-content;
+    }
+    .statsButton
+    {
+        font-size: 9px;
+        padding: 7px 9px 7px 9px;
+    }
+}
+
+.textSpace
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 97%;
+}
+
+@media only screen and (max-width:950px)
+{
+    .coachExpert
+    {
+    font-size: 12px;
+    }
+}
+
+@media only screen and (max-width:750px)
+{
+    .coachExpert
+    {
+    font-size: 10px;
+    }
+}
+
+@media only screen and (max-width:640px)
+{
+    .coachExpert
+    {
+    font-size: 9px;
+    }
+}
+
+@media only screen and (max-width:555px)
+{
+    .coachExpert
+    {
+    font-size: 8px;
+    }
+}
+
+@media only screen and (max-width:479px)
+{
+    .coachExpert
+    {
+    font-size: 7px;
+    }
+}
+
+
+@media only screen and (max-width:462px)
+{
+    .coachExpert
+    {
+    font-size: 12px;
+    }
+}
+
+
+#HRA
+{
+    height: 150px;
+    font-size: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+#HBA1C
+{
+    height: 250px;
+}
+#GLUCOSE
+{
+    height: 250px;
+}
+#STEPS
+{
+    height: 250px;
+}
+#SLEEP
+{
+    height: 250px;
+}
+
+.bigSch2 .bigger 
+{
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+#popup
+{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top:90px
+}
+
+.popSch2
+{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top:90px;
+    /* width:1200px; */
+}
+
+@media only screen and (max-width:820px)
+{
+    #popup
+    {
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width:630px)
+{
+    #popup
+    {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width:510px)
+{
+    #popup
+    {
+        width: 300px;
+    }
+    #stats
+    {
+        margin-left: 0px;
+    }
+}
+
+
+
+.masterBox
+{
+    background-color: 'white'; padding-top: 10px;
+     margin-right: 10px; margin-left: 10px; display: flex; flex-direction: row ; align-content:center;
+}
+
+@media only screen and (max-width:500px)
+{
+    .masterBox
+    {
+        flex-wrap: wrap;
+    }
+    .LeftHalf
+    {
+        width: 100%;
+        margin-left: 10px;
+        /* margin-right: -20px; */
+        /* padding-right: 0px; */
+    }
+    .doctorWrapper
+    {
+        width: 100%;
+    }
+    #doctorProfile
+    {
+       width: 100%;
+    }
+    .rightHalf
+    {
+        width: 100%;
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width:665px)
+{
+    #STEPS
+    {
+        width: 330px;
+    }
+}
+
+.patSch2
+{
+    color: #000000;
+    background-color: white;
+    border-top: 2px solid #F57716;
+}
+.schSch2
+{
+    color:white;
+    background-color: #F57716;
+}
